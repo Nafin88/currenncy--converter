@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency  converter</title>
+    <link rel="icon" href="https://store.webkul.com/media/catalog/product/cache/1/image/260x260/9df78eab33525d08d6e5fb8d27136e95/s/h/shopware6-geo-location-currency-converter.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="head">
+            <h2>C<span>|</span>X</h2>
+            <ul>
+            
+            <li><a href="chart">chart</a></li>
+            <li><a href="help">help</a></li>
+            <li><a href="country">country</a></li>
+            <li><button class="button1" id="form-open">Login</button></li>
+            
+            </ul>
+            
+        </div> 
+    </div>
+    <section class="home">
+        <div class="form_container">
+            <i class="fa fa-window-close form_close"  ></i>
+           
+       <!-- login form-->
+        <div class="form login_form">
+            <h2>Login</h2>
+            <div class="input_box">
+                <input type="email" placeholder="enter your email" required />
+                <i class="fa fa-envelope-o email" aria-hidden="true"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" placeholder="enter your password" required />
+                <i class="fa fa-lock password "></i>
+               
+                
+            </div>
+            <div class="option_field">
+                <span class="checkbox">
+                <input type="checkbox"  id="check">
+                <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forget_pw">forget password?</a>
+            </div>
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">
+                Don't have an account?<a href="#" id="signup">signup</a>
+            </div>
+        
+        </form>
+        </div>
+       <!--signup form-->
+       <div class="form signup_form">
+        <h2>Signup</h2>
+        <div class="input_box">
+            <input type="email" placeholder="enter your email" required />
+            <i class="fa fa-envelope-o email" aria-hidden="true"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="create password" required />
+            <i class="fa fa-lock password"></i>
+            
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="confirm password" required />
+            <i class="fa fa-lock password"></i>
+           
+        </div>
+        
+        <button class="button">Signup Now</button>
+
+        <div class="login_signup">
+            Already have an account?<a href="#" id="login">Login</a>
+        </div>
+    
+    </form>
+    </div>
+
+
+
+    </div>
+    </section>
+    </header>
+        <div class="wrapper">
+            
+            
+            <h1> currency converter </h1>
+        <form action="#">
+        <div class="amount">
+            <p>Enter Amount</p>
+            <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                    <img src="https://flagsapi.com/IN/flat/64.png"  alt="flag">   
+                    <select>
+                       
+                    </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fa fa-exchange" aria-hidden="true"></i> </div>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                    <img src="https://flagsapi.com/HK/flat/64.png"  alt="flag">   
+                    <select>
+                     
+                    </select>
+                    </div>
+            </div>
+            </div>
+            <div class="exchange-rate">getting exchange rate...</div>
+            <button>Get exchange Rate</button>
+        </form>
+        </div>
+        <script src="login.js"></script>
+        <script src="country-list.js"></script>
+        <script src="script.js"></script>
+   
+    
+</body>
+</html>
